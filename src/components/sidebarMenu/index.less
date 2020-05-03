@@ -1,0 +1,232 @@
+/*
+ *  展开
+*/
+.side-menus {
+  width: 172px;
+  font-size: 14px;
+  max-height: 100%;
+
+  >li {
+    >a:hover {
+      background: #fcb040;
+      color: #3b4662;
+    }
+
+    .menu-show {
+      width: 172px;
+      overflow: hidden;
+      transition: height 0.3s;
+
+      >li {
+
+        >a {
+          >span {
+            padding-right: 10px;
+          }
+        }
+
+        &:hover,
+        &.open {
+          background: #222b41;
+          color: #fff;
+
+          >a {
+            >.ivu-icon {
+              color: #ffa329;
+            }
+
+            >.arrow {
+              visibility: visible;
+              color: #fff;
+            }
+          }
+        }
+
+        >a:hover{
+          color: #fff;
+        }
+
+        .menu-show {
+          position: fixed;
+          top: 0;
+          left: 172px;
+          z-index: 99999;
+          height: 100%;
+          padding-top: 8px;
+          width: 0;
+          display: none;
+          // visibility: hidden;
+          // transition: width 0.1s;
+          // overflow-y: auto;
+          
+          // >ie10  hide scrollbar
+          -ms-scroll-chaining: chained;
+          -ms-overflow-style: none;
+          -ms-content-zooming: zoom;
+          -ms-scroll-rails: none;
+          -ms-content-zoom-limit-min: 100%;
+          -ms-content-zoom-limit-max: 500%;
+          -ms-scroll-snap-type: proximity;
+          -ms-scroll-snap-points-x: snapList(100%, 200%, 300%, 400%, 500%);
+          -ms-overflow-style: none;
+
+          &::-webkit-scrollbar {
+            display: none;
+          }
+
+          &:hover{
+            overflow-y: auto;
+          }
+          
+        }
+
+        &:hover{
+          >.menu-show {
+            width: 172px;
+            display: block;
+            // visibility: visible;
+          }
+        }
+        >a:hover{
+          .arrow{
+            visibility: visible;
+          }
+        }
+      }
+
+      .arrow{
+        visibility: hidden;
+      }
+    }
+
+    >.menu-show {
+      background: #303b54;
+
+      .menu-show {
+        background: fade(#3b4764, 95%);
+      }
+
+      >li>.menu-show {
+        border-right: 1px solid #677695;
+        box-sizing: border-box;
+      }
+    }
+
+    &.expanded {
+      .open-arrow {
+        display: block;
+      }
+    }
+  }
+
+  li {
+    display: block;
+    color: #fff;
+
+    a {
+      position: relative;
+      display: block;
+      height: 48px;
+      line-height: 48px;
+      color: inherit;
+      font-size: 14px;
+      word-break: keep-all;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      width: 100%;
+      overflow: hidden;
+
+      .ivu-icon {
+        font-size: 18px;
+        vertical-align: -2px;
+        display: inline-block;
+        width: 18px;
+        height: 18px;
+        text-align: center;
+        line-height: 18px;
+      }
+      .arrow {
+        position: absolute;
+        right: 11px;
+        font-weight: bold;
+        font-size: 12px;
+        display: inline-block;
+        width: 10px;
+        height: 10px;
+        top: 50%;
+        margin-top: -5px;
+        line-height: 10px;
+      }
+    }
+    .active {
+      background-color: #222b41;
+      color: #fff;
+
+      .ivu-icon{
+        color: #ffa329;
+      }
+    }
+  }
+
+  .open-arrow {
+    content: " ";
+    width: 0;
+    height: 0;
+    border-width: 8px 0 8px 8px;
+    border-color: transparent;
+    border-left-color: #222b41;
+    border-style: solid;
+    position: absolute;
+    left: 170px;
+    top: 50%;
+    z-index: -9999;
+    transition: left 0.2s;
+    display: none;
+    visibility: hidden;
+  }
+}
+
+/*
+ *  收缩
+*/
+.side-menus-light {
+  padding: 0;
+  width: 60px;
+
+  &:hover {
+    height: auto;
+  }
+
+  >li {
+    >a {
+      text-align: center;
+      padding: 0 !important;
+
+      span,
+      .arrow {
+        display: none;
+      }
+    }
+    >ul.menu-show {
+      width: inherit;
+
+      >li {
+        >a {
+          text-align: center;
+          padding: 0 !important;
+
+          span,
+          .arrow {
+            display: none;
+          }
+        }
+      }
+    }
+  }
+
+  .open-arrow {
+    left: 60px;
+  }
+}
+
+.sidebar-wrapper::-webkit-scrollbar {display:none}

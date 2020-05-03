@@ -1,0 +1,43 @@
+{
+  "development": {
+    "env": "dev",
+    "baseURL": "mams-rest",
+    "biz": "biz-m-rest",
+    "claimURL": "ems-claim",
+    "emsAdminURL": "ems-admin",
+    "emsPaymentUrl": "ems-payment",
+    "emsBaseDataURL": "ems-base-data",
+    "pscURL": "ems-process-service",
+    "browse": "http://myd.crc.com.cn/mams-rest/",
+    "emsAccountingUrl": "ems-accountant-job-pool",
+    "key": "h1k2#3s4f5d6%7d8s9@0s1f2",
+    "devtools": true
+  },
+  "sit": {
+    "env": "sit",
+    "baseURL": "mams-rest",
+    "biz": "biz-m-rest",
+    "claimURL": "ems-claim",
+    "emsAdminURL": "ems-admin",
+    "emsPaymentUrl": "ems-payment",
+    "emsBaseDataURL": "ems-base-data",
+    "pscURL": "ems-process-service",
+    "browse": "http://myd.crc.com.cn/mams-rest/",
+    "emsAccountingUrl": "ems-accountant-job-pool",
+    "key": "h1k2#3s4f5d6%7d8s9@0s1f2",
+    "devtools": true
+  },
+  "prd": {
+    "env": "prd",
+    "baseURL": "mams-rest",
+    "emsBaseDataURL": "ems-base-data",
+    "pscURL": "ems-process-service",
+    "claimURL": "ems-claim",
+    "emsAdminURL": "ems-admin",
+    "emsPaymentUrl": "ems-payment",
+    "browse": "http://myd.crc.com.cn/mams-rest/",
+    "emsAccountingUrl": "ems-accountant-job-pool",
+    "key": "h1k2#3s4f5d6%7d8s9@0s1f2",
+    "devtools": false
+  }
+}

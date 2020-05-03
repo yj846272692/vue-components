@@ -1,0 +1,173 @@
+html{
+
+  .emstable-wrap {
+    background: #fff;
+    border-top: 2px solid #ffa329;
+
+    &.noSearchbar{
+      border-top: 0;
+    }
+
+    .search-bar {
+      padding: 12px 22px 14px;
+      background: #fff;
+    }
+
+    .handle-bar {
+      position: relative;
+
+      .ivu-btn {
+        margin-right: 10px;
+        padding-left: 10px;
+        padding-right: 10px;
+        height: 22px;
+        line-height: 22px;
+        padding: 0 10px 0 10px;
+      }
+    }
+
+    .search-form {
+      min-width: 1101px;
+      height: 50px;
+      overflow: hidden;
+      margin-bottom: 10px;
+
+      &.expand {
+        min-width: 1101px;
+        height: auto;
+        overflow: inherit;
+        margin-bottom: 5px;
+      }
+
+      &-more {
+        color: #ffa329;
+        position: absolute;
+        right: 0;
+        top: 2px;
+        font-size: 13px;
+      }
+
+      .ivu-form-item {
+        display: inline-block;
+        margin-right: 0;
+        vertical-align: top;
+        margin-bottom: 5px;
+        width: 20.6%;
+      }
+
+      .ivu-form-item:nth-of-type(5n + 5) {
+        width: 16%;
+        padding-right: 0;
+      }
+
+      .ivu-form-item-label {
+        padding: 0;
+        font-size: 12px;
+        float: none;
+        display: inline-block;
+        text-align: left;
+      }
+
+      .ivu-form-item-content {
+        width: 180px;
+        line-height: 26px;
+        
+        .ivu-input-wrapper{
+          .ivu-icon,
+          .ivu-input-icon{
+            width: 22px;
+            height: 22px;
+            line-height: 22px;
+            font-size: 16px;
+          }
+        }
+      }
+
+      .ivu-input,
+      .ivu-select-selection,
+      .ivu-input-number {
+        border: 1px solid #ccc !important;
+        border-radius: 0 !important;
+        font-size: 12px;
+        color: #333;
+        height: 22px;
+        line-height: 22px;
+
+        &:hover,
+        &:focus{
+          border: 1px solid #ffc880 !important;
+        }
+      }
+      .ivu-select-input,
+      .ivu-select-placeholder,
+      .ivu-select-selected-value,
+      .ivu-input-number-input{
+        height: 22px;
+        line-height: 22px;
+      }
+    }
+
+    .footer-tools-col {
+      min-height: 1px;
+    }
+
+    .table-bar {
+      padding: 0 0 10px 20px;
+
+      .ivu-btn {
+        margin-right: 10px;
+      }
+    }
+
+    .ivu-table-wrapper {
+      .ivu-table {
+        table {
+          height: 100%;
+        }
+        td{
+          height: 20px;
+        }
+      }
+      &.fullFill {
+        .ivu-table th{
+          height: 32px;
+        }
+        // .ivu-table td {
+        //   height: 37.45px;
+        // }
+      }
+    }
+  }
+
+  .ivu-tabs {
+    .emstable-wrap {
+      border-top: none;
+
+      // .ivu-table-wrapper {
+      //   &.fullFill {
+      //     .ivu-table-header{
+      //       height: 38px;
+      //     }
+      //     .ivu-table-body{
+      //       >table {
+      //         height: 330px;
+      //       }
+      //     }
+      //   }
+      // }
+    }
+  }
+
+  .core-modal{
+    .ivu-table-wrapper {
+
+      &.fullFill {
+        .ivu-table th{
+          height: 30px;
+        }
+
+      }
+    }
+  }
+
+}
